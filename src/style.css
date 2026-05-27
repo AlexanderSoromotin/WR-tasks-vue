@@ -1,0 +1,51 @@
+/* Tailwind utilities без preflight-reset (чтобы не конфликтовать с PrimeVue) */
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #F8F9FC;
+  color: #374151;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  color: #2563EB;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1D4ED8;
+}
+
+.muted {
+  color: #6B7280;
+}
+
+/* Page transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 200ms ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
